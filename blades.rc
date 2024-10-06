@@ -1,0 +1,8 @@
+--run-nmap:nmap -sC -sV $TARGET
+--run-gobuster:gobuster
+--run-ffuf:ffuf -w "$WORDLIST" -u "$TARGET/FUZZ" -o ffuf.log
+--run-blog:cd $HOME/build/sgarver.github.io/ && bundle exec jekyll serve
+--open-gedit:gnome-text-editor &
+--edit-config:nvim ~/.config/nvim/init.lua
+--edit-blades:nvim ~/.blades
+--edit-zshrc:nvim ~/.zshrc
